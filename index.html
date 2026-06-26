@@ -1,141 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinAcc Advisory Services</title>
-    <style>
-        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f5f7fb; color: #222; line-height: 1.6; }
-        header { background: #001b4d; color: #fff; padding: 50px 20px; text-align: center; }
-        
-        /* Modern Text/CSS Based Logo Placeholder */
-        .logo-box { background: #fff; padding: 30px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto 15px auto; max-width: 550px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-        .logo-text-main { font-size: 2.5rem; font-weight: bold; color: #001b4d; letter-spacing: 1px; }
-        .logo-text-sub { font-size: 1rem; color: #f4b13d; text-transform: uppercase; font-weight: 600; margin-top: 5px; }
-
-        section { padding: 60px 8%; }
-        h2 { color: #001b4d; border-bottom: 3px solid #f4b13d; display: inline-block; padding-bottom: 8px; margin-bottom: 30px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.05); transition: transform 0.2s; }
-        .card:hover { transform: translateY(-3px); }
-        
-        /* Interactive Elements styling */
-        input, select, textarea { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 1rem; }
-        button { background: #f4b13d; color: #001b4d; border: none; padding: 12px 25px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1rem; width: 100%; transition: background 0.2s; }
-        button:hover { background: #e09f2c; }
-        
-        /* Calculator output styling */
-        .calc-result { margin-top: 15px; padding: 15px; background: #f0f4f8; border-radius: 6px; font-weight: bold; color: #001b4d; display: none; }
-        
-        footer { background: #001b4d; color: #fff; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinAcc Advisory Services</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#222}
+header{background:#001b4d;color:#fff;padding:40px;text-align:center}
+.logo-box{background:#fff;padding:20px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 15px auto;max-width:550px;min-height:220px}
+section{padding:50px 8%}\nh2{color:#001b4d}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+input,select,textarea{width:100%;padding:10px;margin:5px 0}
+button{background:#f4b13d;border:none;padding:10px 15px;border-radius:8px}
+footer{background:#001b4d;color:#fff;text-align:center;padding:20px}
+</style>
 </head>
 <body>
 
 <header>
-    <div class="logo-box">
-        <div class="logo-text-main">FinAcc</div>
-        <div class="logo-text-sub">Advisory Services</div>
-    </div>
+<div class="logo-box">
+</div>
+<h1>FinAcc Advisory Services</h1>
+<p>Your Growth & Control Partner</p>
 </header>
 
 <section>
-    <h2>GST Calculator</h2>
-    <div class="card" style="max-width: 450px; margin: 0 auto;">
-        <label for="gstAmount">Amount (₹):</label>
-        <input type="number" id="gstAmount" placeholder="Enter Amount">
-        
-        <label for="gstRate">GST Rate:</label>
-        <select id="gstRate">
-            <option value="5">5%</option>
-            <option value="12">12%</option>
-            <option value="18" selected>18%</option>
-            <option value="28">28%</option>
-        </select>
-        
-        <button onclick="calculateGST()">Calculate GST</button>
-        
-        <div id="calcResult" class="calc-result"></div>
-    </div>
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">
+<h3>Virtual CFO Services</h3>
+<p>Strategic financial leadership, cash flow management, budgeting, and performance analysis without the overhead of a full-time CFO.</p>
+</div>
+<div class="card">
+<h3>Accounts & MIS Outsourcing</h3>
+<p>End-to-end accounting supervision, monthly management reporting, and variance analysis to back your business decisions.</p>
+</div>
+<div class="card">
+<h3>Internal Audit & Financial Controls</h3>
+<p>Strengthening internal checks, process improvements, policy formulation, and safeguarding business assets.</p>
+</div>
+<div class="card">
+<h3>Business Advisory & Project Financing</h3>
+<p>Business plan preparation, working capital management, CMA data creation, and strategic growth advisory.</p>
+</div>
+</div>
 </section>
 
 <section>
-    <h2>Why FinAcc?</h2>
-    <div class="grid">
-        <div class="card"><strong>Experienced Finance Leadership</strong><br>Steer your business with seasoned insight and industry strategies.</div>
-        <div class="card"><strong>Practical Business Solutions</strong><br>Real-world financial advice tailored specifically to your goals.</div>
-        <div class="card"><strong>Strong Financial Controls</strong><br>Mitigate risks and safeguard your corporate health seamlessly.</div>
-        <div class="card"><strong>Result-Oriented Approach</strong><br>Driven by analytics, milestones, and sustainable profitability.</div>
-        <div class="card"><strong>Professional & Confidential Service</strong><br>Uncompromising corporate integrity and secure handling of details.</div>
-    </div>
+<h2>Interactive GST Calculator</h2>
+<div class="card" style="max-width:400px;margin:0 auto;">
+<input placeholder="Enter Amount">
+<select><option>5%</option><option>12%</option><option>18%</option><option>28%</option></select>
+<button>Calculate GST</button>
+</div>
 </section>
 
 <section>
-    <h2>Testimonials</h2>
-    <div class="grid">
-        <div class="card">"Professional and reliable advisory support."</div>
-        <div class="card">"Excellent MIS reporting and finance expertise."</div>
-        <div class="card">"Trusted Virtual CFO services."</div>
-    </div>
+<h2>Why FinAcc?</h2>
+<div class="grid">
+<div class="card">Experienced Finance Leadership</div>
+<div class="card">Practical Business Solutions</div>
+<div class="card">Strong Financial Controls</div>
+<div class="card">Result-Oriented Approach</div>
+<div class="card">Professional & Confidential Service</div>
+</div>
 </section>
 
 <section>
-    <h2>Enquiry Form</h2>
-    <div class="card" style="max-width: 600px; margin: 0 auto;">
-        <form onsubmit="submitEnquiry(event)">
-            <input type="text" placeholder="Name" required>
-            <input type="tel" placeholder="Phone" required>
-            <input type="email" placeholder="Email" required>
-            <textarea rows="5" placeholder="Your Requirement" required></textarea>
-            <button type="submit">Submit Enquiry</button>
-        </form>
-    </div>
+<h2>Testimonials</h2>
+<div class="grid">
+<div class="card">Professional and reliable advisory support.</div>
+<div class="card">Excellent MIS reporting and finance expertise.</div>
+<div class="card">Trusted Virtual CFO services.</div>
+</div>
 </section>
 
 <section>
-    <h2>Founder Profile</h2>
-    <div class="card">
-        <p><strong>Vipul Vyas</strong> – Founder & Principal Consultant</p>
-        <p><em>B.Com (Mumbai) | CA PE-II | Acct. Tech. (ICAI) | GDC&A (Mumbai) | MBA (Finance)</em></p>
-        <p>More than 20 years of experience in Accounts, Finance, MIS Reporting, Cash Flow Management, Internal Audit, Financial Controls and Business Process Improvement.</p>
-    </div>
+<h2>Enquiry Form</h2>
+<div class="card">
+<input placeholder="Name">
+<input placeholder="Phone">
+<input placeholder="Email">
+<textarea rows=\"5\" placeholder="Your Requirement"></textarea>
+<button>Submit Enquiry</button>
+</div>
+</section>
+
+<section>
+<h2>Founder Profile</h2>
+<p><strong>Vipul Vyas</strong> – Founder & Principal Consultant</p>
+<p>B.Com (Mumbai) | CA PE-II | Acct. Tech. (ICAI) | GDC&A (Mumbai) | MBA (Finance)</p>
+<p>More than 20 years of experience in Accounts, Finance, MIS Reporting, Cash Flow Management, Internal Audit, Financial Controls and Business Process Improvement.</p>
 </section>
 
 <footer>
-    <p>© 2026 FinAcc Advisory Services | Ahmedabad, Gujarat</p>
+Ahmedabad
 </footer>
-
-<script>
-    // Real-time GST Calculation logic
-    function calculateGST() {
-        const amount = parseFloat(document.getElementById('gstAmount').value);
-        const rate = parseFloat(document.getElementById('gstRate').value);
-        const resultBox = document.getElementById('calcResult');
-        
-        if (isNaN(amount) || amount <= 0) {
-            resultBox.style.display = "block";
-            resultBox.innerHTML = "Please enter a valid amount.";
-            return;
-        }
-        
-        const gstAmount = (amount * rate) / 100;
-        const totalAmount = amount + gstAmount;
-        
-        resultBox.style.display = "block";
-        resultBox.innerHTML = `
-            Base Amount: ₹${amount.toFixed(2)}<br>
-            GST (${rate}%): ₹${gstAmount.toFixed(2)}<br>
-            <span style="color:#001b4d; font-size:1.2rem;">Total Gross Amount: ₹${totalAmount.toFixed(2)}</span>
-        `;
-    }
-
-    // Enquiry submission handler logic
-    function submitEnquiry(event) {
-        event.preventDefault();
-        alert("Thank you for reaching out to FinAcc! Your enquiry has been recorded successfully.");
-        event.target.reset();
-    }
-</script>
 
 </body>
 </html>
